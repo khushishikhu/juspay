@@ -12,13 +12,15 @@ import Header from "./components/Header";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      <div className="md:block hidden">
+       <div className="md:block hidden">
         <Sidebar />
       </div>
       <div className="flex-1 flex flex-col">
         <Header /> 
-        <main className="flex-1 bg-gray-100 p-4 text-sm relative">
-          <StatCards />
+        <main className="flex-1 px-6 py-6 space-y-6 overflow-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <StatCards />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <BarChartCard />
             <LineChartCard />
@@ -29,7 +31,10 @@ export default function App() {
           </div>
         </main>
       </div>
-      <RightPanel />
+      <div className="hidden xl:block">
+         <RightPanel/>
+      </div>
+
     </div>
   );
 }

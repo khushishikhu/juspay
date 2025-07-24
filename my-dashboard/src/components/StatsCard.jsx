@@ -10,14 +10,14 @@ export default function StatCards() {
   ];
 
   return (
-    <div className="grid grid-cols-4 gap-4 mb-6">
+    <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
       {stats.map((stat) => (
         <div
           key={stat.label}
-          className="bg-white p-4 rounded-xl shadow"
+          className="bg-whitedark:bg-gray-800 p-6 rounded-xl shadow-md"
         >
-          <p className="text-gray-500">{stat.label}</p>
-          <h2 className="text-2xl font-bold">{stat.value}</h2>
+          <p className=" text-gray-500 dark:text-gray-400 text-sm">{stat.label}</p>
+          <h2 className=" text-2xl font-bold text-gray-800 dark:text-white">{stat.value}</h2>
         </div>
       ))}
     </div>
