@@ -24,13 +24,14 @@ export default function App() {
           <Header />
           <main className="flex-1 px-6 py-6 space-y-6">
             {/* Stat Cards + Projections */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 items-stretch">
               <div className="md:col-span-2">
                 <StatCards />
               </div>
-              <div>
+              <div className="md:col-span-2">
                 <ProjectionsBarChart />
               </div>
+
             </div>
 
             {/* BarChart + Revenue */}
