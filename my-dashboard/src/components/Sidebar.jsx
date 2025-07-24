@@ -41,22 +41,22 @@ export default function Sidebar() {
         <div className="mb-6">
           <h2 className="text-xs font-semibold text-gray-400 uppercase mb-2">Dashboards</h2>
           <ul className="space-y-1">
-            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-white hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
               <LayoutDashboard size={16} /> Default
             </li>
-            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-white hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
               <ChevronRight size={16} className="text-gray-400" />
               <div className="flex items-center gap-2">
                 <ShoppingCart size={16} /> eCommerce
               </div>
             </li>
-            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-white hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
               <ChevronRight size={16} className="text-gray-400" />
               <div className="flex items-center gap-2">
                 <Briefcase size={16} /> Projects
               </div>
             </li>
-            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-white hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
               <ChevronRight size={16} className="text-gray-400" />
               <div className="flex items-center gap-2">
                 <BookOpen size={16} /> Online Courses
