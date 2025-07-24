@@ -10,6 +10,7 @@ import {
   Newspaper,
   Users,
   MessageSquare,
+  ChevronRight,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -40,61 +41,74 @@ export default function Sidebar() {
         <div className="mb-6">
           <h2 className="text-xs font-semibold text-gray-400 uppercase mb-2">Dashboards</h2>
           <ul className="space-y-1">
-            <li className="flex items-center gap-2 bg-gray-100 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
               <LayoutDashboard size={16} /> Default
             </li>
-            <li className="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+              <ChevronRight size={16} className="text-gray-400" />
               <div className="flex items-center gap-2">
                 <ShoppingCart size={16} /> eCommerce
               </div>
-              <ChevronDown size={16} className="text-gray-400" />
             </li>
-            <li className="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+              <ChevronRight size={16} className="text-gray-400" />
               <div className="flex items-center gap-2">
                 <Briefcase size={16} /> Projects
               </div>
-              <ChevronDown size={16} className="text-gray-400" />
             </li>
-            <li className="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer">
+            <li className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+              <ChevronRight size={16} className="text-gray-400" />
               <div className="flex items-center gap-2">
                 <BookOpen size={16} /> Online Courses
               </div>
-              <ChevronDown size={16} className="text-gray-400" />
+
             </li>
           </ul>
         </div>
 
         {/* Pages */}
-        <div className="mb-6">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase mb-2">Pages</h2>
-          <ul className="space-y-1">
-            <li className="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer">
-              <div className="flex items-center gap-2">
-                <User size={16} /> User Profile
-              </div>
-              <ChevronDown size={16} className="text-gray-400" />
-            </li>
-            <ul className="ml-6 text-sm text-gray-700 dark:text-gray-300 space-y-1">
-              <li className="hover:text-black cursor-pointer">Overview</li>
-              <li className="hover:text-black cursor-pointer">Projects</li>
-              <li className="hover:text-black cursor-pointer">Campaigns</li>
-              <li className="hover:text-black cursor-pointer">Documents</li>
-              <li className="hover:text-black cursor-pointer">Followers</li>
-            </ul>
-            <li className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-              <Settings size={16} /> Account
-            </li>
-            <li className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-              <Users size={16} /> Corporate
-            </li>
-            <li className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-              <Newspaper size={16} /> Blog
-            </li>
-            <li className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-              <MessageSquare size={16} /> Social
-            </li>
-          </ul>
-        </div>
+        {/* Pages */}
+<div className="mb-6">
+  <h2 className="text-xs font-semibold text-gray-400 uppercase mb-2">Pages</h2>
+  <ul className="space-y-1">
+    {/* User Profile */}
+    <li className="flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+      <div className="flex items-center gap-2">
+        <User size={16} /> User Profile
+      </div>
+      <ChevronDown size={16} className="text-gray-400" />
+    </li>
+
+    {/* Sub-items under User Profile */}
+    <ul className="ml-6 text-sm text-gray-700 dark:text-gray-300 space-y-1">
+      <li className="hover:text-black dark:hover:text-white cursor-pointer">Overview</li>
+      <li className="hover:text-black dark:hover:text-white cursor-pointer">Projects</li>
+      <li className="hover:text-black dark:hover:text-white cursor-pointer">Campaigns</li>
+      <li className="hover:text-black dark:hover:text-white cursor-pointer">Documents</li>
+      <li className="hover:text-black dark:hover:text-white cursor-pointer">Followers</li>
+    </ul>
+
+    {/* Additional options aligned with User Profile */}
+    <li className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded cursor-pointer ">
+      <ChevronRight size={16} className="text-gray-400" />
+      <Settings size={16} /> Account
+    </li>
+    <li className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+      <ChevronRight size={16} className="text-gray-400" />
+      <Users size={16} /> Corporate
+    </li>
+    <li className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded cursor-pointer">
+      <ChevronRight size={16} className="text-gray-400" />
+      <Newspaper size={16} /> Blog
+    </li>
+    <li className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded cursor-pointer ">
+      <ChevronRight size={16} className="text-gray-400" />
+      <MessageSquare size={16} /> Social
+    </li>
+  </ul>
+</div>
+
+
       </nav>
     </aside>
   );

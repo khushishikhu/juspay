@@ -30,7 +30,9 @@ function MainLayout() {
       <div className="flex flex-1 overflow-hidden">
         <div className="flex-1 flex flex-col dark:bg-gray-900 overflow-y-auto">
           <Header />
+          
           <main className="flex-1 px-6 py-6 space-y-6">
+<h4 className="text-xl font-bold">eCommerce</h4>
             <Routes>
               {/* Dashboard Route */}
               <Route

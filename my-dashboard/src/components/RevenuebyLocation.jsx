@@ -15,10 +15,13 @@ export default function RevenueByLocation() {
     <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow w-full">
       <h3 className="text-xl font-semibold mb-4 dark:text-white">Revenue by Location</h3>
       <img
-        src="/world-map-light.png"
-        alt="Map"
-        className="w-full h-32 object-contain mb-4"
-      />
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png"
+  alt="Map"
+  className="w-full h-32 object-contain mb-4"
+/>
+
+
+
       <ul className="space-y-4">
         {locations.map((loc) => (
           <li key={loc.city}>

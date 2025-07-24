@@ -1,4 +1,3 @@
-// components/TotalSalesDonutChart.jsx
 import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
@@ -11,36 +10,36 @@ const data = [
 
 export default function TotalSalesDonutChart() {
   const total = data.reduce((sum, d) => sum + d.value, 0);
-  const centerPercent = ((data[0].value / total) * 100).toFixed(1); // Direct
+  const centerPercent = ((data[0].value / total) * 100).toFixed(1); // "Direct"
 
   return (
     <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow flex flex-col items-center">
       <h3 className="text-xl font-semibold mb-4 dark:text-white self-start">Total Sales</h3>
-      
-      <PieChart width={160} height={160}>
-        <Pie
-          data={data}
-          innerRadius={50}
-          outerRadius={70}
-          paddingAngle={2}
-          dataKey="value"
-          stroke="none"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={entry.color} />
-          ))}
-        </Pie>
-        <text
-          x={80}
-          y={85}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          className="text-gray-800 dark:text-white"
-          style={{ fontSize: "14px", fontWeight: "bold" }}
-        >
+
+      <div className="relative w-[160px] h-[160px]">
+        <PieChart width={160} height={160}>
+          <Pie
+            data={data}
+            innerRadius={50}
+            outerRadius={70}
+            startAngle={90}
+            endAngle={-270}
+            dataKey="value"
+            stroke="none"
+            paddingAngle={0} // disable spacing
+            cornerRadius="50%" // capsule-shaped arcs!
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={entry.color} />
+            ))}
+          </Pie>
+        </PieChart>
+
+        {/* Floating label */}
+        <div className="absolute top-[70px] left-[-12px] bg-gray-900 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
           {centerPercent}%
-        </text>
-      </PieChart>
+        </div>
+      </div>
 
       <div className="mt-6 w-full space-y-3 text-sm">
         {data.map((entry) => (

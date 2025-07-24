@@ -58,13 +58,13 @@ export default function StatCards() {
               {stat.value}
             </h2>
             <div className="flex items-center gap-1 text-sm font-medium text-gray-700 whitespace-nowrap">
-              <span className={stat.positive ? "text-green-600" : "text-red-500"}>
+              <span className={stat.positive ? "text-black" : "text-black"}>
                 {stat.change}
               </span>
               {stat.positive ? (
-                <ArrowUpRight className="w-4 h-4 text-green-600 shrink-0" />
+                <ArrowUpRight className="w-4 h-4 text-black-600 shrink-0" />
               ) : (
-                <ArrowDownRight className="w-4 h-4 text-red-500 shrink-0" />
+                <ArrowDownRight className="w-4 h-4 text-black-500 shrink-0" />
               )}
             </div>
           </div>

@@ -25,21 +25,22 @@ const notifications = [
 ];
 
 const activities = [
-  { name: "You have a bug that needs...", time: "Just now", avatar: "/avatars/01.png" },
-  { name: "Released a new version", time: "59 minutes ago", avatar: "/avatars/02.png" },
-  { name: "Submitted a bug", time: "12 hours ago", avatar: "/avatars/03.png" },
-  { name: "Modified A data in Page X", time: "Today, 11:59 AM", avatar: "/avatars/04.png" },
-  { name: "Deleted a page in Project X", time: "Feb 2, 2023", avatar: "/avatars/05.png" },
+  { name: "You have a bug that needs...", time: "Just now", avatar: "https://i.pravatar.cc/40?img=1" },
+  { name: "Released a new version", time: "59 minutes ago", avatar: "https://i.pravatar.cc/40?img=2" },
+  { name: "Submitted a bug", time: "12 hours ago", avatar: "https://i.pravatar.cc/40?img=3" },
+  { name: "Modified A data in Page X", time: "Today, 11:59 AM", avatar: "https://i.pravatar.cc/40?img=4" },
+  { name: "Deleted a page in Project X", time: "Feb 2, 2023", avatar: "https://i.pravatar.cc/40?img=5" },
 ];
 
 const contacts = [
-  { name: "Natali Craig", avatar: "/avatars/06.png" },
-  { name: "Drew Cano", avatar: "/avatars/07.png" },
-  { name: "Orlando Diggs", avatar: "/avatars/08.png" },
-  { name: "Andi Lane", avatar: "/avatars/09.png" },
-  { name: "Kate Morrison", avatar: "/avatars/10.png" },
-  { name: "Koray Okumus", avatar: "/avatars/11.png" },
+  { name: "Natali Craig", avatar: "https://i.pravatar.cc/40?img=6" },
+  { name: "Drew Cano", avatar: "https://i.pravatar.cc/40?img=7" },
+  { name: "Orlando Diggs", avatar: "https://i.pravatar.cc/40?img=8" },
+  { name: "Andi Lane", avatar: "https://i.pravatar.cc/40?img=9" },
+  { name: "Kate Morrison", avatar: "https://i.pravatar.cc/40?img=10" },
+  { name: "Koray Okumus", avatar: "https://i.pravatar.cc/40?img=11" },
 ];
+
 
 export default function RightPanel() {
   return (
