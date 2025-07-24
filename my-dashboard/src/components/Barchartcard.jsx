@@ -14,8 +14,8 @@ const data = [
 
 export default function BarChartCard() {
   return (
-    <div className="bg-white p-4 rounded-xl shadow col-span-2">
-      <h3 className="text-lg font-semibold mb-4">Revenue</h3>
+    <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow col-span-2">
+      <h3 className="text-lg font-semibold mb-4 dark:text-gray-100">Revenue</h3>
       <ResponsiveContainer width="100%" height={200}>
         <BarChart data={data}>
           <XAxis dataKey="name" />

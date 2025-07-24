@@ -14,8 +14,8 @@ const data = [
 
 export default function LineChartCard() {
   return (
-    <div className="bg-white p-4 rounded-xl shadow">
-      <h3 className="text-lg font-semibold mb-4">Users</h3>
+    <div className="bg-white p-4 rounded-xl shadow dark:bg-gray-800">
+      <h3 className="text-lg font-semibold mb-4 dark:text-gray-100">Users</h3>
       <ResponsiveContainer width="100%" height={200}>
         <LineChart data={data}>
           <XAxis dataKey="name" />

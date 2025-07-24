@@ -15,7 +15,7 @@ export default function App() {
        <div className="md:block hidden">
         <Sidebar />
       </div>
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col dark:bg-gray-900">
         <Header /> 
         <main className="flex-1 px-6 py-6 space-y-6 overflow-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

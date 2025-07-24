@@ -14,7 +14,7 @@ export default function StatCards() {
       {stats.map((stat) => (
         <div
           key={stat.label}
-          className="bg-whitedark:bg-gray-800 p-6 rounded-xl shadow-md"
+          className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md"
         >
           <p className=" text-gray-500 dark:text-gray-400 text-sm">{stat.label}</p>
           <h2 className=" text-2xl font-bold text-gray-800 dark:text-white">{stat.value}</h2>

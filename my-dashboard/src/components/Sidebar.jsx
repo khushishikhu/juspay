@@ -15,7 +15,7 @@ import {
 export default function Sidebar() {
   return (
     // Add this to Sidebar.jsx root div
-<aside className="w-64 h-full bg-white shadow-md p-4 hidden md:block dark:bg-gray-900">
+<aside className="w-64 h-full bg-white shadow-md p-4 hidden md:block dark:bg-gray-800">
       <h1 className="text-xl font-bold mb-6 dark:text-gray-300">ByeWind</h1>
       <nav className="text-gray-700 text-sm space-y-6">
         <div>

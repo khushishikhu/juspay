@@ -9,11 +9,11 @@ export default function ProductsTable() {
   ];
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow col-span-2">
-      <h3 className="text-lg font-semibold mb-4">Top Products</h3>
-      <table className="w-full text-left text-sm">
-        <thead>
-          <tr className="text-gray-500">
+    <div className="bg-white dark:bg-gray-800  p-4 rounded-xl shadow col-span-2">
+      <h3 className="text-lg font-semibold mb-4 dark:text-gray-400">Top Products</h3>
+      <table className="w-full text-left text-sm dark:text-gray-300">
+        <thead className="text-gray-500 dark:text-gray-400">
+          <tr className="border-t border-gray-200 dark:border-gray-700">
             <th className="pb-2">Product</th>
             <th className="pb-2">Price</th>
             <th className="pb-2">Stock</th>
